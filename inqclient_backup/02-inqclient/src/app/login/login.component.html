@@ -1,0 +1,17 @@
+<h1>Inquiry Demo - Login</h1>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm" >
+  
+    <label>
+      Userid:
+      <input type="text" formControlName="userid">
+    </label>
+  <p></p>
+    <label>
+      Password:
+      <input type="text" formControlName="password">
+    </label>
+  <p></p>
+    <button (click)="onSubmit()">Do Login</button>
+    
+  </form>
